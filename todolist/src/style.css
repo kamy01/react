@@ -1,9 +1,9 @@
 body {
-    background-color: black;
+    background-color: whitesmoke;
 }
 
 .todo-list {
-    background-color: whitesmoke;
+    background-color: white;
     margin: auto;
     width: 50%;
     display: flex;
@@ -32,9 +32,9 @@ body {
     width: 70%;
     border-bottom: 1px solid #cecece;
     font-family: Roboto, sans-serif;
-    font-weight: 200;
+    font-weight: 100;
     font-size: 15px;
-    color:  green;
+    color: #333333;
 }
 
 input[type=checkbox] {

@@ -1,14 +1,12 @@
-import React from "react"
+import React from "react";
 
-
-
-function TodoItem() {
-  return (
-    <div className="todo-item"> 
-        <input type="checkbox" />
-        <p>Placeholder text here</p>
-    </div>
-  )
+function TodoItem(props) {
+	return (
+		<div className="todo-item">
+			<input type="checkbox" checked = {props.todo.completed} />
+			<p>{props.todo.text}</p>
+		</div>
+	);
 }
 
-export default TodoItem
+export default TodoItem;

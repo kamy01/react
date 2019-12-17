@@ -6,6 +6,8 @@ function Product(props) {
 			<h3>Name : {props.product.name}</h3>
             <h3>Price : {props.product.price.toLocaleString("en-US", { style: "currency", currency: "EUR" })}</h3>
             <h3>Description : {props.product.description}</h3>
+            <br></br>
+            <br></br>
 		</div>
 	);
 }

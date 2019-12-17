@@ -1,19 +1,16 @@
-import React from "react"
+import React from "react";
 
-import Header from "./components/Header"
-import MainContent from "./components/MainContent"
-import Footer from "./components/Footer"
-import TodoItem from "./TodoItem"
+import TodoItem from "./TodoItem";
+import todosData from "./data/todosData";
 
+import "./style.css"
 
 function App() {
-  return (
-    <div className="todo-list">
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
-        </div>
-  )
+	const todoItems = todosData.map(item => (
+		<TodoItem key={item.id} todo={item} />
+	));
+
+	return <div className="todo-list">{todoItems}</div>;
 }
 
-export default App
+export default App;
